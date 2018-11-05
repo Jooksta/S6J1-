@@ -1,0 +1,8 @@
+<h1>Connexion</h1>
+<a href="/users/home">Retourner à l'accueil</a>
+<%= form_tag "/users/login", method: "post" do %>
+	<input type="text" name="prenom" />
+	<input type="text" name="nom" />
+	<input type="text" name="email" />
+	<input type="submit" value="S'identifier" />
+<% end %>
